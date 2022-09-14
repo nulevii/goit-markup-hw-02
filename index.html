@@ -10,81 +10,90 @@
 </head>
 
 <body>
-  <header>
-    <a href="./index.html">
+  <header class="page-header">
+    <a class="header-logo" href="./index.html">
       <h1>Web Studio</h1>
     </a>
 
-    <nav>
-      <ul>
-        <li>Студія</li>
-        <li>Портфоліо</li>
-        <li>Контакти</li>
+    <nav class="navigation">
+      <ul class="navigation-list">
+        <li><a class="navigation-list-element" href="./index.html">Студія</a></li>
+        <li><a class="navigation-list-element" href="./portfolio.html">Портфоліо</a></li>
+        <li><a class="navigation-list-element" href="">Контакти</a></li>
       </ul>
     </nav>
-    <figure>
-      <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-      <a href="tel:+38-096-111-11-11">+38 096 111 11 11</a>
+
+    <figure class="header-contacts">
+      <a class="header-contact-element" href="mailto:info@devstudio.com">info@devstudio.com</a>
+      <a class="header-contact-element" href="tel:+38-096-111-11-11">+38 096 111 11 11</a>
     </figure>
   </header>
 
-  <main>
-    <section>
-      <h2>Ефективні рішення для вашого бізнесу</h2>
-      <form action="./index.html">
-        <input type="submit" value="Замовити послугу" />
-      </form>
+  <main class="studio-main">
+    <section class="order-section">
+      <h2 class="order-section-sign">Ефективні рішення для вашого бізнесу</h2>
+      <input class="order-section-button" type="button" value="Замовити послугу" />
     </section>
 
-    <section>
+    <section class="features-section">
       <h2 style="visibility: hidden; height: 0; width: 0;">Особливості</h2>
-      <article>
-        <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
-        <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+      <article class="fiture-element">
+        <h3 class="fiture-sign">УВАГА ДО ДЕТАЛЕЙ</h3>
+        <p class="fiture-text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
       </article>
-      <article>
-        <h3>ПУНКТУАЛЬНІСТЬ</h3>
-        <p>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+      <article class="fiture-element">
+        <h3 class="fiture-sign">ПУНКТУАЛЬНІСТЬ</h3>
+        <p class="fiture-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
       </article>
-      <article>
-        <h3>ПЛАНУВАННЯ</h3>
-        <p>Так само консультація з широким активом значною мірою зумовлює.</p>
+      <article class="fiture-element">
+        <h3 class="fiture-sign">ПЛАНУВАННЯ</h3>
+        <p class="fiture-text">Так само консультація з широким активом значною мірою зумовлює.</p>
       </article>
-      <article>
-        <h3>СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-        <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+      <article class="fiture-element">
+        <h3 class="fiture-sign">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+        <p class="fiture-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
       </article>
     </section>
 
-    <section>
-      <h2>Чим ми займаємося</h2>
-      <img src="./images/about_us/about_us_one.jpg" alt="Програмування">
-      <img src="./images/about_us/about_us_two.jpg" alt="Мобільна розробка">
-      <img src="./images/about_us/about_us_three.jpg" alt="Дизайн">
+    <section class="about-us-section">
+      <h2 class="about-us-sign">Чим ми займаємося</h2>
+      <ul class="about-us-list">
+        <li>
+          <img class="about-us-image" src="./images/about_us/about_us_one.jpg" alt="Програмування" height="294"
+            width="370">
+        </li>
+        <li>
+          <img class="about-us-image" src="./images/about_us/about_us_two.jpg" alt="Мобільна розробка" height="294"
+            width="370">
+        </li>
+        <li>
+          <img class="about-us-image" src="./images/about_us/about_us_three.jpg" alt="Дизайн" height="294" width="370">
+        </li>
+      </ul>
     </section>
 
     <section>
       <h2>Наша команда</h2>
       <article>
-        <img src="./images/our_team/igor_demyanenko.jpg" alt="Ігор Дем'яненко">
+        <img src="./images/our_team/igor_demyanenko.jpg" alt="Ігор Дем'яненко" height="260" width="270">
         <h3>Ігор Дем'яненко</h3>
         <p>Product Designer</p>
       </article>
 
       <article>
-        <img src="./images/our_team/olga_repina.jpg" alt="Ольга Рєпіна">
+        <img src="./images/our_team/olga_repina.jpg" alt="Ольга Рєпіна" height="260" width="270">
         <h3>Ольга Рєпіна</h3>
         <p>Frontend Developer</p>
       </article>
 
       <article>
-        <img src="./images/our_team/mykola_tarasov.jpg" alt="Микола Тарасов">
+        <img src="./images/our_team/mykola_tarasov.jpg" alt="Микола Тарасов" height="260" width="270">
         <h3>Микола Тарасов</h3>
         <p>Marketing</p>
       </article>
 
       <article>
-        <img src="./images/our_team/myhaylo_yermakov.jpg" alt="Михайло Єрмаков">
+        <img src="./images/our_team/myhaylo_yermakov.jpg" alt="Михайло Єрмаков" height="260" width="270">
         <h3>Михайло Єрмаков</h3>
         <p>UI Designer</p>
       </article>
