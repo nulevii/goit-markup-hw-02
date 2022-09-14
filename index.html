@@ -7,52 +7,56 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WebStudio</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
   <header class="page-header">
-    <a class="header-logo" href="./index.html">
-      <h1>Web Studio</h1>
-    </a>
-
     <nav class="navigation">
+      <a class="header-logo" href="index.html"> <span>Web</span>Studio</a>
       <ul class="navigation-list">
-        <li><a class="navigation-list-element" href="./index.html">Студія</a></li>
-        <li><a class="navigation-list-element" href="./portfolio.html">Портфоліо</a></li>
+        <li><a class="navigation-list-element selected" href="index.html">Студія</a></li>
+        <li><a class="navigation-list-element" href="portfolio.html">Портфоліо</a></li>
         <li><a class="navigation-list-element" href="">Контакти</a></li>
       </ul>
     </nav>
-
-    <figure class="header-contacts">
-      <a class="header-contact-element" href="mailto:info@devstudio.com">info@devstudio.com</a>
-      <a class="header-contact-element" href="tel:+38-096-111-11-11">+38 096 111 11 11</a>
-    </figure>
+    <ul class="header-contacts">
+      <li>
+        <a class="header-contact-element" href="mailto:info@devstudio.com">info@devstudio.com</a>
+      </li>
+      <li>
+        <a class="header-contact-element" href="tel:+38-096-111-11-11">+38 096 111 11 11</a>
+      </li>
+    </ul>
   </header>
 
-  <main class="studio-main">
+
+  <main class="page-main studio-main">
     <section class="order-section">
-      <h2 class="order-section-sign">Ефективні рішення для вашого бізнесу</h2>
-      <input class="order-section-button" type="button" value="Замовити послугу" />
+      <h1 class="order-section-sign">Ефективні рішення для вашого бізнесу</h1>
+      <button class="order-section-button" type="button">Замовити послугу</button>
     </section>
 
     <section class="features-section">
       <h2 style="visibility: hidden; height: 0; width: 0;">Особливості</h2>
-      <article class="fiture-element">
-        <h3 class="fiture-sign">УВАГА ДО ДЕТАЛЕЙ</h3>
-        <p class="fiture-text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
-      </article>
-      <article class="fiture-element">
-        <h3 class="fiture-sign">ПУНКТУАЛЬНІСТЬ</h3>
-        <p class="fiture-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
-      </article>
-      <article class="fiture-element">
-        <h3 class="fiture-sign">ПЛАНУВАННЯ</h3>
-        <p class="fiture-text">Так само консультація з широким активом значною мірою зумовлює.</p>
-      </article>
-      <article class="fiture-element">
-        <h3 class="fiture-sign">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-        <p class="fiture-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
-      </article>
+      <ul class="fiture-list">
+        <li class="fiture-element">
+          <h3 class="fiture-sign">УВАГА ДО ДЕТАЛЕЙ</h3>
+          <p class="fiture-text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+        </li>
+        <li class="fiture-element">
+          <h3 class="fiture-sign">ПУНКТУАЛЬНІСТЬ</h3>
+          <p class="fiture-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+        </li>
+        <li class="fiture-element">
+          <h3 class="fiture-sign">ПЛАНУВАННЯ</h3>
+          <p class="fiture-text">Так само консультація з широким активом значною мірою зумовлює.</p>
+        </li>
+        <li class="fiture-element">
+          <h3 class="fiture-sign">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+          <p class="fiture-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+        </li>
+      </ul>
     </section>
 
     <section class="about-us-section">
@@ -74,43 +78,51 @@
 
     <section class="our-team-section">
       <h2 class="our-team-sign">Наша команда</h2>
-      <article class="our-team-element">
-        <img class="our-team-person-image" src="./images/our_team/igor_demyanenko.jpg" alt="Ігор Дем'яненко"
-          height="260" width="270">
-        <h3 class="our-team-person-name">Ігор Дем'яненко</h3>
-        <p class="our-team-person-position">Product Designer</p>
-      </article>
+      <ul class="our-team-list">
+        <li class="our-team-element">
+          <img class="our-team-person-image" src="./images/our_team/igor_demyanenko.jpg" alt="Ігор Дем'яненко"
+            height="260" width="270">
+          <h3 class="our-team-person-name">Ігор Дем'яненко</h3>
+          <p class="our-team-person-position">Product Designer</p>
+        </li>
 
-      <article class="our-team-element">
-        <img class="our-team-person-image" src="./images/our_team/olga_repina.jpg" alt="Ольга Рєпіна" height="260"
-          width="270">
-        <h3 class="our-team-person-name">Ольга Рєпіна</h3>
-        <p class="our-team-person-position">Frontend Developer</p>
-      </article>
+        <li class="our-team-element">
+          <img class="our-team-person-image" src="./images/our_team/olga_repina.jpg" alt="Ольга Рєпіна" height="260"
+            width="270">
+          <h3 class="our-team-person-name">Ольга Рєпіна</h3>
+          <p class="our-team-person-position">Frontend Developer</p>
+        </li>
 
-      <article class="our-team-element">
-        <img class="our-team-person-image" src="./images/our_team/mykola_tarasov.jpg" alt="Микола Тарасов" height="260"
-          width="270">
-        <h3 class="our-team-person-name">Микола Тарасов</h3>
-        <p class="our-team-person-position">Marketing</p>
-      </article>
+        <li class="our-team-element">
+          <img class="our-team-person-image" src="./images/our_team/mykola_tarasov.jpg" alt="Микола Тарасов"
+            height="260" width="270">
+          <h3 class="our-team-person-name">Микола Тарасов</h3>
+          <p class="our-team-person-position">Marketing</p>
+        </li>
 
-      <article class="our-team-element">
-        <img class="our-team-person-image" src="./images/our_team/myhaylo_yermakov.jpg" alt="Михайло Єрмаков"
-          height="260" width="270">
-        <h3 class="our-team-person-name">Михайло Єрмаков</h3>
-        <p class="our-team-person-position">UI Designer</p>
-      </article>
+        <li class="our-team-element">
+          <img class="our-team-person-image" src="./images/our_team/myhaylo_yermakov.jpg" alt="Михайло Єрмаков"
+            height="260" width="270">
+          <h3 class="our-team-person-name">Михайло Єрмаков</h3>
+          <p class="our-team-person-position">UI Designer</p>
+        </li>
+      </ul>
     </section>
   </main>
+
+
   <footer class="page-footer">
-    <a class="footer-logo" href="./index.html">
-      <h2>WebStudio</h2>
-    </a>
+    <a class="footer-logo" href="index.html">Web Studio</a>
     <address class="footer-contacts">
       <p class="footer-adress">м. Київ, пр-т Лесі Українки, 26</p>
-      <p class="footer-email">info@devstudio.com</p>
-      <p class="footer-phone">+38 096 111 11 11</p>
+      <ul class="footer-contact-list">
+        <li>
+          <a class="footer-contact-element" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+        <li>
+          <a class="footer-contact-element" href="tel:+38-096-111-11-11">+38 096 111 11 11</a>
+        </li>
+      </ul>
     </address>
   </footer>
 
